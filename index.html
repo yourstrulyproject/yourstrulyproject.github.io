@@ -1,0 +1,248 @@
+<html>
+<head>
+    <title>
+    Yours Truly    
+    </title>
+    <script src="jquery-2.1.4.min.js"></script>
+    <script src="//use.typekit.net/hin4dex.js"></script>
+    <script src="jquery.xcolor.js"></script>
+    <script src="jquery.scrollTo.js"></script>
+    <LINK href="yoursTruely.css" rel="stylesheet" type="text/css">
+    <script>try{Typekit.load();}catch(e){}</script>
+</head>
+
+
+<body>
+    <div class="background"><div class="textBox">Yours Truly</div><div class="textBox2">Make Your Voice Heard</div></div>
+    
+    <div class="logoplace logo"></div>
+    <div class="logoplace2 logo"></div>
+    <div class="logoplace3 logo"></div>
+    <div class="logoplace4 logo"></div>
+    
+    <div class="r1"></div>
+    <div class="r2"></div>
+    <div class="r3"></div>
+    <div class="r4"></div>
+    <div class="r5"></div>
+    <div class="r6"></div>
+    <div class="r7"></div>
+    <div class="r8"></div>
+    <div class="r9"></div>
+    
+    
+    <div class="window introPos">Welcome to<br> Yours Truly project.</div>
+    <div class="window pos2">My name is Yeon<br> and I would like<br> to make your<br> unpublished book.</div>
+    <div class="window pos3">I am a graphic design student and I was prompted to do a project about libraries. While investigating the ideas about libraries and publishing, I realized that I wanted to hear the unheard voices. I thought publishers should not be the only ones who decide what ideas should be heard and what should not. </div>
+    <div class="window pos4">So I invite you to send me your book that did not get published due to whatever reasons. I will design, print and hand-bind two copies of your book. One will be sent back to you and the other one will be donated to a library of your choice. </div>
+    <div class="window pos5">The Instruction is Simple:<br><br>
+<div class="info">
+1. Get a text file of your book.<br><br>
+2. Get a classification number according to <a href="http://204.38.55.73/dnn6/Portals/0/DeweyDecimalClassificationChart.pdf">Dewy Decimal Classification System.</a><br><br>
+3. Decide what library you want your book to be sent.<br><br>
+4. Send those with your address to yours.truly.book@gmail.com<br><br>
+5. Get your printed book.<br><br>
+6. Check out your book at the library.
+    </div>
+</div>
+    <div class="window pos6">Let's Make Your Voice Heard!</div>
+    <div class="info">
+      
+        <div class="underline"></div>
+        <div class="title">Yours<br>Truly<br>Project.</div>
+        <div class="underline"></div>
+        <div class="info1">Introduction</div>
+        <div class="info2">Instruction</div>
+        <div class="info3">Gallery</div>
+        <div class="transparentDiv"></div>
+        <div class="info4">Contact</div>
+        <div class="infoLogo"></div>
+        <div class="infoLogo2"></div>
+        
+       
+        
+        
+    </div>
+     <div class="t1">
+            <div class="underline" style="width:450"></div>
+            <div class="subtitle">Introduction</div>
+            <div class="text">Welcome to Yours Truly project.<br><br>My name is Yeon and I would like to make your unpublished book. I am a graphic design student and I was prompted to do a project about libraries. While investigating the ideas about libraries and publishing, I realized that I wanted to hear the unheard voices. I thought publishers should not be the only ones who decide what ideas should be heard and what should not.So I invite you to send me your book that did not get published due to whatever reasons. I will design, print and hand-bind two copies of your book. One will be sent back to you and the other one will be donated to a library of your choice.</div>
+        </div>
+        
+        <div class="t2">
+            <div class="underline" style="width:350"></div>
+            <div class="subtitle">Instruction</div>
+            <div class="text">1. Get a text file of your book.<br><br>
+2. Get a classification number according<br> to <a href="http://204.38.55.73/dnn6/Portals/0/DeweyDecimalClassificationChart.pdf">Dewy Decimal Classification System.</a><br><br>
+3. Decide what library you want your <br>book to be sent.<br><br>
+4. Send those with your address to yours.truly.book@gmail.com<br><br>
+5. Get your printed book.<br><br>
+6. Check out your book at the library.</div>
+        </div>
+        
+        <div class="t3">
+            <div class="underline" style="width:600"></div>
+            <div class="subtitle">Gallery</div>
+            <div class="images"></div>
+        </div>
+        
+        <div class="t4">
+            <div class="underline" style="width:400"></div>
+            <div class="subtitle">Contact</div>
+            <div class="text">
+               If you have any other questions please email to<br> yours.truly.book@gmail.com<br><br>Make your voice heard!
+            </div>
+        </div>
+    <script>
+        
+        var prev = 0;
+        var imgCount = 1;
+        
+        $(".images").click(function()
+        {
+            
+            imgCount++;
+            if(imgCount > 4)
+                imgCount = 1;
+            $(".images").css("background-image","url(img"+imgCount+".jpg)");
+            console.log('url("img'+imgCount+'.jpg")');
+        });
+        
+        $(".info1").click(function()
+        {
+            $(window).scrollTo("21%");
+            
+        });
+        $(".info2").click(function()
+        {
+            $(window).scrollTo("42%");
+            
+        });
+        $(".info3").click(function()
+        {
+            $(window).scrollTo("63%");
+            
+        });
+        $(".info4").click(function()
+        {
+            $(window).scrollTo("84%");
+            
+        });
+        
+
+    
+        $(window).scroll(function()
+        {
+            var scrollNum = $(this).scrollTop();
+            var winHeight = $(this).height();
+            
+            
+            var a = scrollNum/winHeight;
+         //   console.log(a+" "+scrollNum+" "+winHeight+" \n");
+            
+            if(a>=1)
+            {
+                $(".logo").css("opacity","0");
+            }
+            else
+            {
+                $(".logo").css("opacity","1");
+                $(".background").css("background-color","#e29cd5");
+                $(".textBox").css("color","#000000");
+                $(".textBox2").css("color","#000000");
+                for(i=1; i<=9; i++)
+                    {
+                        $(".r"+i).css({"width":0,"height":0});
+                    }
+            }
+            
+            if(prev != parseInt(a))
+            {
+                prev = parseInt(a);
+                    
+                var r = parseInt(255*Math.random());
+                var g = parseInt(255*Math.random());
+                var b = parseInt(255*Math.random());
+                $(".background").css("background-color","rgb("+r+","+g+","+b+")");
+                var cc = $.xcolor.complementary("rgb("+r+","+g+","+b+")");
+                $(".textBox").css("color",cc.getHex());
+                $(".textBox2").css("color",cc.getHex());
+                check = 1;
+
+
+                var n = parseInt((r/255)*9);
+                var w = parseInt((g/255)*9)*25;
+                var h = parseInt((b/255)*9)*50;
+                var i;
+                if(w == 0)
+                    w=1;
+                if(h == 0)
+                    h=1;
+
+                if(n == 0)
+                {
+                    var angle = parseInt(Math.random()*360);
+                    var x = parseInt(Math.random()*100);
+                    var y = parseInt(Math.random()*100);
+                    $(".r1").css({"width":w,"height":h,"-webkit-transform":"rotate("+angle+"deg)","background-color":cc.getHex(),"left":x+"%","top":y+"%","border-radius":"50%"});
+                    for(i=2; i<=9; i++)
+                    {
+                        $(".r"+i).css({"width":0,"height":0});
+                    }
+                }
+                else
+                {
+                    $(".r1").css("border-radius","0");
+                    for(i=1; i<=n; i++)
+                    {
+                        var angle = parseInt(Math.random()*360);
+                        var x = parseInt(Math.random()*100);
+                        var y = parseInt(Math.random()*100);
+                        $(".r"+i).css({"width":w,"height":h,"-webkit-transform":"rotate("+angle+"deg)","background-color":cc.getHex(),"left":x+"%","top":y+"%"});
+                    }
+                    for(i=n+1; i<10; i++)
+                    {
+                        $(".r"+i).css({"width":0,"height":0});
+                    }
+                }
+            
+            }
+           
+            
+           // console.log(parseInt(a)+"\n");
+            var i;
+            var j;
+            
+            if(parseInt(a) == 0)
+            {
+                $(".info").css("left","-50%");
+                for(i = 1; i<=4; i++)
+                    $(".t"+i).css("right","-100%");
+            }
+            else 
+            {
+                $(".info").css("left","2%");
+                var j;
+                var i;
+               for(i = 1; i<=4; i++)
+                {
+                    if(i==parseInt(a))
+                    {
+                        $(".info"+parseInt(a)).css("border-bottom","3px solid black");
+                        $(".t"+i).css("right","2%");
+                    }
+                    else
+                    {
+                        $(".info"+i).css("border-bottom","none");
+                        $(".t"+i).css("right","-100%");
+                    }
+                }
+            }
+            
+            
+        });
+            
+    </script>
+</body>
+</html>
+    

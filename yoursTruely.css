@@ -1,0 +1,84 @@
+body {
+-moz-font-feature-settings:"calt", "liga", "clig", "kern";
+-moz-font-feature-settings:"calt=1, liga=1, clig=1, kern=1";
+-ms-font-feature-settings:"calt", "liga", "clig", "kern";
+-o-font-feature-settings:"calt", "liga", "clig", "kern";
+-webkit-font-feature-settings:"calt", "liga", "clig", "kern";
+font-feature-settings:"calt", "liga", "clig", "kern";
+}
+.logowrapper{height:15%;width:11%; position:fixed;}
+.logo{position: fixed;
+    width:15%;
+    height: 17%;
+    background-image: url(logo.png); background-size: contain; background-repeat: no-repeat;background-position: center;
+    -webkit-transition: all 0.8s}
+.logoplace{top:10px; right:10px}
+.logoplace2{bottom:8px}
+.logoplace3{bottom:8px; right:10px}
+.logoplace4{top:10px; left:10px}
+
+.background{position: absolute; top:0; left:0; height:599%; width:100%; background-color: #e29cd5;text-align: center;-webkit-transition: all 0.8s}
+.textBox{text-align: center; width:100%; top:50%; margin-top: -88px; font-size: 80; font-family:"minion pro display"; position: fixed;-webkit-transition: all 0.8s}
+.textBox2{text-align: center;  width:100%; top:50%; font-size: 30; margin-top: 5; font-family:"minion pro"; position: fixed;-webkit-transition: all 0.8s}
+
+
+.window{background-color: white; outline: 7px solid black; padding: 15px;font-family: "minion pro"; font-size: 40; text-align: center; position: absolute; display:none}
+.introPos{left:10%; top:120%}
+.pos2{right:20%; top:180%}
+.pos3{width:600px; left:10%; top:240%; text-align: left}
+.pos4{width: 500px; right:20%; top:320%; text-align: left}
+.pos5{width: 450px; left:20%; top: 400%; text-align: left}
+.pos6{right:20%; top:520%;}
+.info{font-size:28;}
+
+
+.r1{width:0; height:0; left:-50%; top:-50%; position: fixed;-webkit-transition: all 0.8s}
+.r2{width:0; height:0; left:-50%; top:-50%; position: fixed;-webkit-transition: all 0.8s}
+.r3{width:0; height:0; left:-50%; top:-50%; position: fixed;-webkit-transition: all 0.8s}
+.r4{width:0; height:0; left:-50%; top:-50%; position: fixed;-webkit-transition: all 0.8s}
+.r5{width:0; height:0; left:-50%; top:-50%; position: fixed;-webkit-transition: all 0.8s}
+.r6{width:0; height:0; left:-50%; top:-50%; position: fixed;-webkit-transition: all 0.8s}
+.r7{width:0; height:0; left:-50%; top:-50%; position: fixed;-webkit-transition: all 0.8s}
+.r8{width:0; height:0; left:-50%; top:-50%; position: fixed;-webkit-transition: all 0.8s}
+.r9{width:0; height:0; left:-50%; top:-50%; position: fixed;-webkit-transition: all 0.8s}
+
+.info{width:180px; height: 410px; left:-50%; top:10%; background-color: white; position: fixed; padding: 10px;-webkit-transition: all 0.8s}
+.underline{width:180px; height:8px; background-color:black; position: relative; margin-top: 5px}
+.title{left:3px;width:180px; height: auto; font-family:"minion pro display"; font-size: 37.5px; position:relative; line-height: 106%; margin-top: 3px; margin-bottom: 7px}
+.info1{left:3px; font-family: "minion pro display"; font-size:25px; position: relative; margin-top: 20px;display: inline-block}
+.info2{left:3px; font-family: "minion pro display"; font-size:25px; position: relative; margin-top: 20px;display: inline-block}
+.info3{left:3px; font-family: "minion pro display"; font-size:25px; position: relative; margin-top: 20px;display: inline-block}
+.info4{left:3px; font-family: "minion pro display"; font-size:25px; position: relative; margin-top: 20px;display: inline-block}
+.transparentDiv{width:40px; height:40px; display:inline-block}
+.infoLogo{ background-image: url(logo.png); background-size: contain; background-repeat: no-repeat;background-position: center;width:30px;height:25px;border:10px;position:relative;top:35;left:150px;}
+
+.t1{width:450px; top:10%; right:-100%; background-color: white; position: fixed; padding: 10px; -webkit-transition: all 0.8s; padding-bottom: 15px}
+.t2{width:350px; top:10%; right:-100%; background-color: white; position: fixed; padding: 10px; -webkit-transition: all 0.8s;padding-bottom: 15px}
+.t3{width:600px; top:10%; right:-100%; background-color: white; position: fixed; padding: 10px; -webkit-transition: all 0.8s}
+.t4{width:400px; top:10%; right:-100%; background-color: white; position: fixed; padding: 10px; -webkit-transition: all 0.8s}
+
+.subtitle{left:3px; font-family: "minion pro display"; font-size: 45px; position: relative;}
+.text{left:3px; width:430px; font-family: "minion pro display"; font-size: 20px; position: relative; margin-top: 30px; line-height: 140%}
+.images{width:600px; height:450px; position:relative; margin-top: 20px; overflow: scroll; background-image: url(img1.jpg); background-size: contain; background-repeat: no-repeat; background-position: center; -webkit-transition: all 0.3s}
+
+.images:hover
+{
+    cursor: pointer;
+}
+.info1:hover
+{
+    cursor: pointer;
+}
+.info2:hover
+{
+    cursor: pointer;
+}
+.info3:hover
+{
+    cursor: pointer;
+}
+.info4:hover
+{
+    cursor: pointer;
+}
+
